@@ -1,0 +1,30 @@
+.menu {
+  &__list {
+    @include flex(space-between, center, row);
+  }
+
+  &__item:not(:last-child) {
+    margin-right: 30px;
+  }
+  &__link {
+    @include text($H100, 400, $white);
+    font-family: $navigation-font;
+    text-transform: uppercase;
+    transition: all 0.3s linear;
+    &:hover {
+      color: $placeholder-color;
+    }
+  }
+  &__link::after {
+    display: block;
+    content: "";
+    height: 1px;
+    width: 0%;
+    background-color: $white;
+    transition: width 0.3s ease-in-out;
+  }
+  &__link:hover:before,
+  &__link:hover::after {
+    width: 100%;
+  }
+}

@@ -1,0 +1,15 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;900&family=Roboto&display=swap");
+
+// // Core
+
+@import "./core/vars";
+@import "./core/mixins";
+@import "./core/common";
+
+// // Common components
+@import "./components/common/navigation";
+@import "./components/common/logo";
+@import "./components/common/menu";
+@import "./components/common/header-slider";
+// // Components
+@import "./components/header";

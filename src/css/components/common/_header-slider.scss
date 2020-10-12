@@ -1,0 +1,21 @@
+.header-slider {
+  &__item {
+    @include flex(center, center, column);
+  }
+  &__title {
+    @include text($H800, 500, $white);
+    font-family: $main-font;
+    text-transform: uppercase;
+    max-width: 640px;
+    text-align: center;
+    margin-bottom: 70px;
+  }
+  &__link {
+    @include text($H200, 400, $white);
+    font-family: $main-font;
+    transition: all 0.4s linear;
+    &:hover {
+      color: $light-gray;
+    }
+  }
+}

@@ -1,0 +1,14 @@
+.logo {
+  cursor: pointer;
+  @include flex(center, center, column);
+  width: 65px;
+  height: 60px;
+  border: 2px solid $white;
+  border-radius: 3px;
+  &__text {
+    @include text($H300, 400, $white);
+    font-family: $navigation-font;
+    text-transform: uppercase;
+    display: block;
+  }
+}

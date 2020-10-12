@@ -1,0 +1,4 @@
+.navigation {
+  height: 100px;
+  @include flex(space-between, center, row);
+}
