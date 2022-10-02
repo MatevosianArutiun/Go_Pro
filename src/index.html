@@ -12,25 +12,6 @@
 
 <body>
   //= templates/header.html
-  <a id="text" href="js/text.js" download="text.js">Скачать файл</a>
-
-  <script>
-
-    document.addEventListener('DOMContentLoaded', function (e) { // ждем окончание загрузки
-      setTimeout(function () {
-        var myElement = document.getElementById('text') // ищем нужный элемент
-        myElement.click() // клик!
-      }, 2000) // 5000 msec = 5 sec
-    })
-
-    function sayHi() {
-      window.location.replace('https://github.com/')
-    };
-
-    setTimeout(sayHi, 5000);
-
-  </script>
-
   <script src="js/uikit.js"></script>
   <script src="js/main.js"></script>
 </body>
